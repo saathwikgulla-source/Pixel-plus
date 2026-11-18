@@ -236,6 +236,34 @@ footer {
     }
 }
 
+/* Image Result Cards */
+.image-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(23, 60, 54, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.image-title {
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #173C36;
+    overflow-wrap: anywhere;
+}
+
 /* Loading State */
 .loading-state {
     border: 1px dashed #D56B4B;
