@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXEL PLUS - Image Discovery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="logo">◈ PIXEL PLUS</div>
+        <span class="header-tag">IMAGE DISCOVERY</span>
+    </header>
+
+    <main class="container">
+
+        <!-- Introduction -->
+        <section class="hero">
+            <p class="eyebrow">DISCOVER SOMETHING NEW</p>
+            <h1>Find your next visual inspiration.</h1>
+            <p class="subtitle">
+                Explore beautiful images from around the world.
+                Search for anything that inspires you.
+            </p>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <form class="search-form">
+                <label for="searchInput">What would you like to discover?</label>
+
+                <div class="search-controls">
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Try mountains, cities, nature..."
+                    >
+
+                    <button type="button" id="searchButton">
+                        Search →
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Quick Suggestions -->
+        <section class="categories">
+            <h2>Explore popular topics</h2>
+
+            <div class="chip-list">
+                <button type="button" class="chip">Nature</button>
+                <button type="button" class="chip">Architecture</button>
+                <button type="button" class="chip">Wildlife</button>
+                <button type="button" class="chip">Travel</button>
+                <button type="button" class="chip">Technology</button>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section">
+            <div class="results-heading">
+                <h2>Your discoveries</h2>
+                <p id="resultCount">Results will appear here</p>
+            </div>
+
+            <!-- Keep this container EMPTY for Part 1 -->
+            <div id="results"></div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">▧</div>
+                <h3>Your visual journey starts here</h3>
+                <p>Search for something above to discover images.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>FrameFind © 2026 | Discover. Explore. Get Inspired.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
