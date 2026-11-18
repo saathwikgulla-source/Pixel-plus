@@ -263,3 +263,77 @@ footer {
     color: #173C36;
     overflow-wrap: anywhere;
 }
+
+/* Loading State */
+.loading-state {
+    border: 1px dashed #D56B4B;
+}
+
+.loading-state::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 15px;
+    border: 4px solid #E1E9DF;
+    border-top-color: #D56B4B;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Empty Results */
+.no-results-state {
+    background: #F0EDE3;
+}
+
+/* Error State */
+.error-state {
+    background: #FFF0EB;
+    border-color: #D56B4B;
+}
+
+.error-state h3 {
+    color: #B84E35;
+}
+
+/* Card Animation */
+.image-card {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Disabled Search Button */
+.search-controls button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Mobile Improvements */
+@media (max-width: 480px) {
+    #results {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .image-title {
+        font-size: 12px;
+        padding: 9px;
+    }
+}
