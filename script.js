@@ -1,3 +1,3 @@
 
-// FrameFind - Part 1
+// PIXEL PLUS - Part 1
 // Search functionality will be added in Part 2.
